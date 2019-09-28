@@ -1,7 +1,7 @@
 package before.abstractfactory;
 
 /**
- * 白色动物工厂 实现动物工厂
+ * 白色动物工厂 实现动物生产工厂 start painting the white animals
  */
 public class WhiteAnimalFactory implements IAnimalFactory {
     @Override

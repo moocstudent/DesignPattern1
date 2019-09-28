@@ -1,5 +1,6 @@
 package before.abstractfactory;
 
+//测试抽象工厂
 public class Test {
     public static void main(String[] args){
         IAnimalFactory blackAnimalFactory = new BlackAnimalFactory();
