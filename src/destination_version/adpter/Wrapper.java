@@ -10,7 +10,7 @@ public class Wrapper implements Targetable {
 	}
 	@Override
 	public void method2() {
-		System.out.println("this is the targetable method!");
+		System.out.println("this is the targetable method2!");
 	}
 
 	@Override

@@ -10,10 +10,25 @@ package destination_version.abstractfactory;
 public class Test {
 
     public static void main(String[] args) {
-        Provider provider = new SendMailFactory();
-        Sender sender = provider.produce();
-        sender.Send();
+        Provider emailProvider = new SendMailFactory();
+        Sender sender = emailProvider.produce();
+        sender.send();
         Provider smsProvider = new SendSmsFactory();
-        smsProvider.produce().Send();
+        smsProvider.produce().send();
+
+        Provider sendShoesProdiver = new SendShoesFactory();
+        sendShoesProdiver.produce().send();
+        
+        
+        //
+        BuildCarFactory buildCarFactory = new BuildCarFactory();
+        Car car718 = buildCarFactory.buildCarOK(
+                buildCarFactory.buildBody(),
+                buildCarFactory.buildBone(),
+                buildCarFactory.buildWheel()
+        );
+
+        Sender produce = buildCarFactory.produce();
+        car718.thisIsCar(produce);
     }
 }

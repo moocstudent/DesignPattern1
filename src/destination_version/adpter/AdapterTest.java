@@ -10,7 +10,9 @@ package destination_version.adpter;
 public class AdapterTest {
 
 	public static void main(String[] args) {
+		//源声明为对象
 		Source source = new Source();
+		//把源对象装入包装类
 		Targetable target = new Wrapper(source);
 		target.method1();
 		target.method2();
